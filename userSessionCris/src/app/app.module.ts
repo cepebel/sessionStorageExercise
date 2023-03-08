@@ -8,21 +8,21 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CourseCardComponent } from './course-card/course-card.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginFormComponent,
     WelcomePageComponent,
-    CourseCardComponent
+    CourseCardComponent, 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule
+    HttpClientModule, 
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

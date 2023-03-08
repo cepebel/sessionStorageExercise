@@ -1,0 +1,40 @@
+{
+    "users":[
+        {"_id": 1, "name": "Albert", "surname": "Camus", "courses": [1, 2, 3]},
+        {"_id": 2, "name": "Jose", "surname": "Bonaparte", "cousers": [3, 6]},
+        {"_id": 3, "name": "Camila", "surname": "Cabello", "cousers": [2, 5, 24, 17]},
+        {"_id": 4, "name": "Ada", "surname": "Byron", "cousers": [1,5,17,18,19]},
+        {"_id": 5, "name": "Matilde", "surname": "Cano", "cousers": [1, 3, 25, 24, 23]},
+        {"_id": 6, "name": "Paquita", "surname": "Salas", "cousers": [12, 13, 14]},
+        {"_id": 7, "name": "Tito", "surname": "Berni", "cousers": []},
+        {"_id": 8, "name": "Atreyu", "surname": "", "cousers": [10, 11, 4, 8,19]},
+        {"_id": 9, "name": "Emilia", "surname": "Pardos-Bazán", "cousers": [5,6,7]}
+
+    ],
+    "courses":[
+        {"_id": 1, "type": "Tec", "name": "Programming 101", "semester": 1 },
+        {"_id": 2, "type": "Tec", "name": "Programming 102", "semester": 2 },
+        {"_id": 3, "type": "Tec", "name": "Introductión a Daba Bases", "semester": 3 },
+        {"_id": 4, "type": "Tec", "name": "Introductión a HTML", "semester": 1 },
+        {"_id": 5, "type": "Lit", "name": "El español actual: Idioma y uso", "semester": 1 },
+        {"_id": 6, "type": "Lit", "name": "Historia contemporánea", "semester": 4 },
+        {"_id": 7, "type": "Lit", "name": "Retórica y sus aplicaciones", "semester": 3 },
+        {"_id": 8, "type": "Hum", "name": "Filosofía Contemporánea", "semester": 1 },
+        {"_id": 9, "type": "Hum", "name": "Arte y Patrimonio", "semester": 2},
+        {"_id": 10, "type": "Fic", "name": "Como entrenar a tu perro-dragón", "semester": 1 },
+        {"_id": 11, "type": "Fic", "name": "La Nada, conocimiento del mundo adulto", "semester": 2 },
+        {"_id": 12, "type": "Art", "name": "Música del Barroco", "semester": 2 },
+        {"_id": 13, "type": "Art", "name": "Armonía y composición", "semester": 2 },
+        {"_id": 14, "type": "Art", "name": "Música de la Edad Media", "semester": 2 },
+        {"_id": 15, "type": "Sci", "name": "Termodinámica", "semester": 1 },
+        {"_id": 16, "type": "Sci", "name": "Mecánica y ondas", "semester": 2 },
+        {"_id": 17, "type": "Sci", "name": "Física de partículas", "semester": 2 },
+        {"_id": 18, "type": "Sci", "name": "Física de la Atmósfera", "semester": 2 },
+        {"_id": 19, "type": "Sci", "name": "Filosofía de la Ciencia", "semester": 2 },
+        {"_id": 20, "type": "Art", "name": "Color", "semester": 1 },
+        {"_id": 21, "type": "Art", "name": "Tejidos y Vuelo", "semester": 2 },
+        {"_id": 22, "type": "Art", "name": "Volumen", "semester": 2 },
+        {"_id": 23, "type": "Tec", "name": "Dibujo técnico", "semester": 2 },
+        {"_id": 24, "type": "Art", "name": "Canto", "semester": 2 }
+    ]
+}

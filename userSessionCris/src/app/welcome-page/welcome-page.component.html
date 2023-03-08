@@ -1,0 +1,15 @@
+<div class="div-welcome">
+    <button class="button-logging">Log Out</button>
+    <p class="p-user">Bienvenido {{myUser.name}}</p>
+    
+</div>
+<div class = "div-main">
+    Babel University te invita a aprender. ¿Cómo van esos cursos?
+    <ul>
+        <li *ngFor="let course of myCourses" >
+            {{course.name}}
+        </li>
+    </ul>
+    
+</div>
+

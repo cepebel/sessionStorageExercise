@@ -1,0 +1,27 @@
+.div-simple{
+    font-size: large;
+    text-align: center;
+    padding: 30px;
+}
+.div-form{
+    font-size: medium;
+    text-align: center;
+    padding: 30px;
+    margin-left: 33%;
+    width: 30%;
+    height: 40%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 29, 150);
+    .label{
+        margin-right: 15px;
+    }
+    .button{
+        margin: 20px;
+    }
+}
+.form-simple{
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+}
