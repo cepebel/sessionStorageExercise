@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginFormComponent implements OnInit {
   userName: Iuser = {};
-  loggedUser: Iuser = {};
+  loggedUser: Iuser = {name:"default"};
   name: string = ""
   USERS: Iuser[] = [];
   isRegister: Boolean = false;
@@ -23,10 +23,12 @@ export class LoginFormComponent implements OnInit {
   }
   iniciarSesion(f: NgForm){
     this.name = f.value.firstName;
-    this.isRegister = this.logInService.checkandLogIn(this.name)
-    if (this.isRegister){
-      console.log("Habemus Usuario")
-    }
+    this.logInService.checkandLoginObservable(this.name).subscribe(
+      res =>{
+        sessionStorage.setItem("myuser", JSON.stringify(res) || 'No hay usuario')
+        console.log(res.name)
+      },
+      err => console.log('HTTP Error', err));
     console.clear
   }
  

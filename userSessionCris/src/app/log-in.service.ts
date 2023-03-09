@@ -1,11 +1,14 @@
+import { catchError } from 'rxjs/operators';
+import { observable, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Iuser, Icourses } from './app.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogInService {
+  
   loggedUser: Iuser = {}
   GET_USER_BY_NAME = 'http://localhost:3000/users?name='
 
@@ -26,4 +29,14 @@ export class LogInService {
       return true
     } 
   } 
+
+  checkandLoginObservable(name: string): Observable <Iuser> {
+    return this.http.get<Iuser>(this.GET_USER_BY_NAME+ name)
+  }
+  private handleError (error: HttpErrorResponse){
+    if(error.status === 0){
+      console.error('An error occurred', error.error)
+    }
+
+  }
 }
