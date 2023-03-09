@@ -17,10 +17,8 @@ export class WelcomePageComponent implements OnInit {
 
   ngOnInit(): void {
    this.myUserString = sessionStorage.getItem("myuser") || ''
-   console.log(this.myUserString)
-   this.myUser = JSON.parse(this.myUserString)
-   this.coursesService.getAllUserCoursers(this.myUser.courses).subscribe(res => {this.myCourses = res})
-   console.log(this.myCourses)
+   this.myUser = JSON.parse(this.myUserString)[0]
+ 
   }
   cerrarSesion(){
     sessionStorage.clear();

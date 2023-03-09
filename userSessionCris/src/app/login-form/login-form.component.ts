@@ -5,6 +5,7 @@ import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { LogInService } from '../log-in.service';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-form',
@@ -18,7 +19,7 @@ export class LoginFormComponent implements OnInit {
   USERS: Iuser[] = [];
   isRegister: Boolean = false;
   
-  constructor(private logInService: LogInService) {}
+  constructor(private logInService: LogInService, private router: Router) {}
   ngOnInit(): void {
   }
   iniciarSesion(f: NgForm){
@@ -27,6 +28,7 @@ export class LoginFormComponent implements OnInit {
       res =>{
         sessionStorage.setItem("myuser", JSON.stringify(res) || 'No hay usuario')
         console.log(res.name)
+        this.router.navigateByUrl('welcome')
       },
       err => console.log('HTTP Error', err));
     console.clear
