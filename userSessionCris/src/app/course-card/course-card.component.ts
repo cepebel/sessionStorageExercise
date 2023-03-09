@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { Iuser, Icourses } from '../app.model';
 import { CoursesService } from '../courses.service';
 
 @Component({
   selector: 'app-course-card',
   templateUrl: './course-card.component.html',
-  styleUrls: ['./course-card.component.scss']
+  styleUrls: ['./course-card.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class CourseCardComponent implements OnInit {
   myCourses: Icourses[] = []

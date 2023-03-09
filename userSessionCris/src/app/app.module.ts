@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CourseCardComponent } from './course-card/course-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     HttpClientModule, 
     MatCardModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatTabsModule,
+    BrowserAnimationsModule
  
   ],
   providers: [],

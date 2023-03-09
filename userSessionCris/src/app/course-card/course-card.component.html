@@ -1,6 +1,138 @@
+<mat-tab-group>
+    <mat-tab label="Primer Semestre">
+        <div *ngFor="let course of myCourses">
+            <div *ngIf="course.semester==1"> 
+                <mat-card [ngClass]="{
+                    'sci-card': course.type =='Sci',
+                    'lit-card': course.type == 'Lit',
+                    'tec-card': course.type == 'Tec',
+                    'hum-card': course.type == 'Hum',
+                    'art-card': course.type == 'Art',
+                    'fic-card': course.type == 'Fic'
+                }">
+                    <mat-card-title>
+                        {{course.name}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        <div>
+                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Semestre: {{course.semester}}</p>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Segundo Semestre">
+        <div *ngFor="let course of myCourses">
+            <div *ngIf="course.semester==2"> 
+                <mat-card [ngClass]="{
+                    'sci-card': course.type =='Sci',
+                    'lit-card': course.type == 'Lit',
+                    'tec-card': course.type == 'Tec',
+                    'hum-card': course.type == 'Hum',
+                    'art-card': course.type == 'Art',
+                    'fic-card': course.type == 'Fic'
+                }">
+                    <mat-card-title>
+                        {{course.name}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        <div>
+                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Semestre: {{course.semester}}</p>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Tercer Semestre">
+        <div *ngFor="let course of myCourses">
+            <div *ngIf="course.semester==3"> 
+                <mat-card [ngClass]="{
+                    'sci-card': course.type =='Sci',
+                    'lit-card': course.type == 'Lit',
+                    'tec-card': course.type == 'Tec',
+                    'hum-card': course.type == 'Hum',
+                    'art-card': course.type == 'Art',
+                    'fic-card': course.type == 'Fic'
+                }">
+                    <mat-card-title>
+                        {{course.name}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        <div>
+                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Semestre: {{course.semester}}</p>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Cuarto Semestre">
+        <div *ngFor="let course of myCourses">
+            <div *ngIf="course.semester==4"> 
+                <mat-card [ngClass]="{
+                    'sci-card': course.type =='Sci',
+                    'lit-card': course.type == 'Lit',
+                    'tec-card': course.type == 'Tec',
+                    'hum-card': course.type == 'Hum',
+                    'art-card': course.type == 'Art',
+                    'fic-card': course.type == 'Fic'
+                }">
+                    <mat-card-title>
+                        {{course.name}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        <div>
+                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Semestre: {{course.semester}}</p>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-tab>
+  </mat-tab-group>
 
-<div *ngFor="let course of myCourses">
-    <mat-card class = "art-card">
+<!--
+<mat-tab-group>
+    <mat-tab *ngFor="let course of myCourses">
+        <ng-template> Semestre nº {{course.semester}}</ng-template>
+        <mat-card [ngClass]="{
+            'sci-card': course.type =='Sci',
+            'lit-card': course.type == 'Lit',
+            'tec-card': course.type == 'Tec',
+            'hum-card': course.type == 'Hum',
+            'art-card': course.type == 'Art',
+            'fic-card': course.type == 'Fic'
+        }">
+            <mat-card-title>
+                {{course.name}}
+            </mat-card-title>
+            <mat-card-content>
+                <div>
+                    <p>Tipo de materia: {{course.type}}</p>
+                    <p>Semestre: {{course.semester}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+    </mat-tab>
+</mat-tab-group>
+ -->
+<!--
+
+    <mat-card [ngClass]="{
+        'sci-card': course.type =='Sci',
+        'lit-card': course.type == 'Lit',
+        'tec-card': course.type == 'Tec',
+        'hum-card': course.type == 'Hum',
+        'art-card': course.type == 'Art',
+        'fic-card': course.type == 'Fic'
+    }">
         <mat-card-title>
             {{course.name}}
         </mat-card-title>
@@ -12,18 +144,5 @@
         </mat-card-content>
     </mat-card>
 </div>
-
-
-<!--
-<div *ngFor="let course of myCourses">
-    <div class="card mb-3">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-</div>
-
 -->
+
