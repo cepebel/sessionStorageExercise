@@ -9,6 +9,7 @@ import { CoursesService } from '../courses.service';
   encapsulation: ViewEncapsulation.None
 })
 export class CourseCardComponent implements OnInit {
+  filterSelection:string = '';
   myCourses: Icourses[] = []
   myUserString?: string 
   myUser: Iuser = {}

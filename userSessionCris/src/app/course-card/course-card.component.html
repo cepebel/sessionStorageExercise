@@ -1,6 +1,9 @@
 <mat-tab-group>
     <mat-tab label="Primer Semestre">
-        <div *ngFor="let course of myCourses">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+        </div>
+        <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==1"> 
                 <mat-card [ngClass]="{
                     'sci-card': course.type =='Sci',
@@ -24,7 +27,10 @@
         </div>
     </mat-tab>
     <mat-tab label="Segundo Semestre">
-        <div *ngFor="let course of myCourses">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+        </div>
+        <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==2"> 
                 <mat-card [ngClass]="{
                     'sci-card': course.type =='Sci',
@@ -48,7 +54,10 @@
         </div>
     </mat-tab>
     <mat-tab label="Tercer Semestre">
-        <div *ngFor="let course of myCourses">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+        </div>
+        <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==3"> 
                 <mat-card [ngClass]="{
                     'sci-card': course.type =='Sci',
@@ -72,7 +81,10 @@
         </div>
     </mat-tab>
     <mat-tab label="Cuarto Semestre">
-        <div *ngFor="let course of myCourses">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+        </div>
+        <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==4"> 
                 <mat-card [ngClass]="{
                     'sci-card': course.type =='Sci',
