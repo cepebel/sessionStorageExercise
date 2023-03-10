@@ -11,6 +11,8 @@ import { CourseCardComponent } from './course-card/course-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     MatCardModule,
     MatAutocompleteModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
  
   ],
   providers: [],

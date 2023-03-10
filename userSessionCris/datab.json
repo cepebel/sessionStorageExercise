@@ -2,13 +2,12 @@
     "users":[
         {"_id": 1, "name": "Albert", "surname": "Camus", "courses": [1, 2, 3,7,8,9]},
         {"_id": 2, "name": "Jose", "surname": "Bonaparte", "courses": [3, 6,8,11,12,15]},
-        {"_id": 3, "name": "Camila", "surname": "Cabello", "courses": [2, 5, 24, 17]},
+        {"_id": 3, "name": "Camila", "surname": "Cabello", "courses": [2, 5, 24, 17,12,13,14]},
         {"_id": 4, "name": "Ada", "surname": "Byron", "courses": [1,5,17,18,19]},
         {"_id": 5, "name": "Matilde", "surname": "Cano", "courses": [1, 3, 25, 24, 23]},
         {"_id": 6, "name": "Paquita", "surname": "Salas", "courses": [12, 13, 14]},
-        {"_id": 7, "name": "Tito", "surname": "Berni", "courses": []},
-        {"_id": 8, "name": "Atreyu", "surname": "", "courses": [10, 11, 4, 8,18]},
-        {"_id": 9, "name": "Emilia", "surname": "Pardos-Bazán","courses": [5,6,7,8,9]}
+        {"_id": 7, "name": "Atreyu", "surname": "", "courses": [10, 11, 4, 8,18]},
+        {"_id": 8, "name": "Emilia", "surname": "Pardos-Bazán","courses": [5,6,7,8,9]}
 
     ],
     "courses":[
@@ -24,17 +23,17 @@
         {"_id": 10, "type": "Fic", "name": "Como entrenar a tu perro-dragón", "semester": 1 },
         {"_id": 11, "type": "Fic", "name": "La Nada, conocimiento del mundo adulto", "semester": 2 },
         {"_id": 12, "type": "Art", "name": "Música del Barroco", "semester": 2 },
-        {"_id": 13, "type": "Art", "name": "Armonía y composición", "semester": 2 },
+        {"_id": 13, "type": "Art", "name": "Armonía y composición", "semester": 4 },
         {"_id": 14, "type": "Art", "name": "Música de la Edad Media", "semester": 2 },
         {"_id": 15, "type": "Sci", "name": "Termodinámica", "semester": 1 },
         {"_id": 16, "type": "Sci", "name": "Mecánica y ondas", "semester": 2 },
         {"_id": 17, "type": "Sci", "name": "Física de partículas", "semester": 2 },
-        {"_id": 18, "type": "Sci", "name": "Física de la Atmósfera", "semester": 2 },
+        {"_id": 18, "type": "Sci", "name": "Física de la Atmósfera", "semester": 4 },
         {"_id": 19, "type": "Sci", "name": "Filosofía de la Ciencia", "semester": 2 },
         {"_id": 20, "type": "Art", "name": "Color", "semester": 1 },
-        {"_id": 21, "type": "Art", "name": "Tejidos y Vuelo", "semester": 2 },
+        {"_id": 21, "type": "Art", "name": "Tejidos y Vuelo", "semester": 4 },
         {"_id": 22, "type": "Art", "name": "Volumen", "semester": 2 },
         {"_id": 23, "type": "Tec", "name": "Dibujo técnico", "semester": 2 },
-        {"_id": 24, "type": "Art", "name": "Canto", "semester": 2 }
+        {"_id": 24, "type": "Art", "name": "Canto", "semester": 3 }
     ]
 }

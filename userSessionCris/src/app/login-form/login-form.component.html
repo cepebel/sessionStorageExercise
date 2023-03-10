@@ -7,7 +7,7 @@
     <form #logInForm = "ngForm"  (ngSubmit)="iniciarSesion(logInForm)" class = "form-simple"  >
         <label class = "label" for ="name ">Nombre:</label>
         <input id ="name" name = "firstName" ngModel required #firstName = 'ngModel'><br>
-        <button class="button">Iniciar Sesion</button>
+        <button mat-button class="button">Iniciar Sesion</button>
     </form>
 </div>
 

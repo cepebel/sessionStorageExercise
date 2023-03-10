@@ -1,10 +1,14 @@
-<div class="div-welcome">
-    <button class="button-logging" type="button" routerLink="/log-in" (click)="cerrarSesion()">Log Out</button>
-    <p class="p-user">Bienvenido {{myUser.name}}</p>
-    
-</div>
+<header class="header-welcome">
+    <button mat-button  type="button" routerLink="/log-in" (click)="cerrarSesion()">
+        <mat-icon>
+            logout
+        </mat-icon>
+        Logout
+    </button>
+    <p class="p-user">Bienvenido {{myUser.name}} {{myUser.surname}}</p> 
+</header>
 <div class = "div-main">
-    Babel University te invita a aprender. ¿Cómo van esos cursos?
+    <p class = "p-title">Babel University te invita a aprender. ¿Cómo van esos cursos?</p>
 </div>
 
 <app-course-card></app-course-card>
