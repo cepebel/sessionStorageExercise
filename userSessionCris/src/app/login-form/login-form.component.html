@@ -4,9 +4,15 @@
 </div>
 
 <div class = "div-form">
-    <form #logInForm = "ngForm"  (ngSubmit)="iniciarSesion(logInForm)" class = "form-simple"  >
-        <label class = "label" for ="name ">Nombre:</label>
-        <input id ="name" name = "firstName" ngModel required #firstName = 'ngModel'><br>
+    <form #logInForm = "ngForm"  (ngSubmit)="iniciarSesion(logInForm)" class = "form-simple">
+        <div class = "div-label">
+            <label class = "label" for ="name ">Nombre:</label>
+            <input id ="name" name = "firstName" ngModel required #firstName = 'ngModel'><br>
+        </div>
+        <div class = "div-label">
+            <label class = "label" for = "password">Contraseña:</label>
+            <input id = "password" name = "password" ngModel required #password = 'ngModel'><br>
+        </div>
         <button mat-button class="button">Iniciar Sesion</button>
     </form>
 </div>
