@@ -13,7 +13,7 @@ import { MatTabsModule} from '@angular/material/tabs';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
-import { FilterPipe } from './filter.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -38,7 +38,7 @@ import { FilterPipe } from './filter.pipe';
     MatIconModule
  
   ],
-  providers: [],
+  providers: [FilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

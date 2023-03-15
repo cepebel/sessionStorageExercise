@@ -1,4 +1,4 @@
-import { CoursesService } from './../courses.service';
+import { CoursesService } from '../services/courses.service';
 import { Iuser, Icourses } from './../app.model';
 import { Component, OnInit } from '@angular/core';
 import { Observable, range } from 'rxjs';

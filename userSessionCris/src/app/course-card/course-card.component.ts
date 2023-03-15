@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { Iuser, Icourses } from '../app.model';
-import { CoursesService } from '../courses.service';
+import { CoursesService } from '../services/courses.service';
 
 @Component({
   selector: 'app-course-card',

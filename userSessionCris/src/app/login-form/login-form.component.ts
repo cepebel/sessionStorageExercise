@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Iuser } from '../app.model';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { LogInService } from '../log-in.service';
+import { LogInService } from '../services/log-in.service';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
