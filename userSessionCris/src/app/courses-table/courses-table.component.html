@@ -1,0 +1,29 @@
+<mat-table [dataSource] = 'COURSES' class = "mat-elevation-z8">
+    <ng-container matColumnDef="courseName">
+        <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.courseName}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="courseType">
+        <mat-header-cell *matHeaderCellDef> Type</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.courseType}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="etsCredits">
+        <mat-header-cell *matHeaderCellDef> ETS</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.etsCredits}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="semester">
+        <mat-header-cell *matHeaderCellDef> Semester</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.semester}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+            <button mat-button>Withdraw</button> 
+            <button mat-button (click)="enroleOnCourse(element.courseId)">Enrole</button>
+            <button mat-button>Info</button>
+        </mat-cell>
+    </ng-container>
+    
+    <mat-header-row *matHeaderRowDef='displayedColumns'></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

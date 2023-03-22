@@ -1,0 +1,19 @@
+<header class="header-welcome">
+    <button mat-button  type="button" routerLink="/log-in" (click)="cerrarSesion()">
+        <mat-icon>
+            logout
+        </mat-icon>
+        Logout
+    </button>
+    <button mat-button type="button" routerLink="/welcome">
+        <mat-icon>home</mat-icon>
+        Mis cursos
+    </button>
+    <p class="p-user">¡Hola {{myUser.username}}!</p> 
+</header>
+<div class = "div-main">
+    <p class = "p-title">Tabla de cursos que parece una tabla</p>
+</div>
+<div class = "div-table">
+    <app-courses-table></app-courses-table>
+</div>

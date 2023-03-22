@@ -1,0 +1,45 @@
+.header-welcome{
+    top:0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: medium;
+    color:white;
+    position: static;
+    background-color:  rgb(62, 62, 62);
+} 
+.p-user{
+    margin-top:5px;
+    padding: 15px;
+}
+.mat-button{
+    padding:5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    vertical-align: baseline;
+    background-color: rgb(62, 62, 62);
+    color:white;
+}
+.div-main{
+    position: relative;
+    height: 100px;
+    background-image:url(../../assets/images/background-div-gray.jpg);
+    background-size: cover;
+}
+.p-title{
+    position:relative;
+    padding-top: 15px;
+    height: 100%;
+    margin-left: 10%;
+    top:20px;
+    font-size:20px;
+    color:rgb(23, 22, 22);
+    font-weight: 400;
+}
+.div-table{
+    position:relative;
+ 
+}
