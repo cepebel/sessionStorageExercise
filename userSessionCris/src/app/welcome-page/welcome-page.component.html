@@ -5,10 +5,14 @@
         </mat-icon>
         Logout
     </button>
-    <p class="p-user">¡Hola {{myUser.name}} {{myUser.surname}}!</p> 
+    <button mat-button type="button" routerLink="/courses">
+        <mat-icon>menu</mat-icon>
+        Matriculación
+    </button>
+    <p class="p-user">¡Hola {{myUser.username}}!</p> 
 </header>
 <div class = "div-main">
-    <p class = "p-title">La libertad es una forma de pensar</p>
+    <p class = "p-title">Tabla de cursos que no parece una tabla</p>
 </div>
 
 <app-course-card></app-course-card>

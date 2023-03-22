@@ -1,24 +1,24 @@
 <mat-tab-group>
     <mat-tab label="Primer Semestre">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+            <input courseType="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
         </div>
         <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==1"> 
                 <mat-card [ngClass]="{
-                    'sci-card': course.type =='Sci',
-                    'lit-card': course.type == 'Lit',
-                    'tec-card': course.type == 'Tec',
-                    'hum-card': course.type == 'Hum',
-                    'art-card': course.type == 'Art',
-                    'fic-card': course.type == 'Fic'
+                    'sci-card': course.courseType =='Sci',
+                    'lit-card': course.courseType == 'Lit',
+                    'tec-card': course.courseType == 'Tec',
+                    'hum-card': course.courseType == 'Hum',
+                    'art-card': course.courseType == 'Art',
+                    'fic-card': course.courseType == 'Fic'
                 }">
                     <mat-card-title>
-                        {{course.name}}
+                        {{course.courseName}}
                     </mat-card-title>
                     <mat-card-content>
                         <div>
-                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Tipo de materia: {{course.courseType}}</p>
                             <p>Semestre: {{course.semester}}</p>
                         </div>
                     </mat-card-content>
@@ -28,24 +28,24 @@
     </mat-tab>
     <mat-tab label="Segundo Semestre">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+            <input courseType="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
         </div>
         <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==2"> 
                 <mat-card [ngClass]="{
-                    'sci-card': course.type =='Sci',
-                    'lit-card': course.type == 'Lit',
-                    'tec-card': course.type == 'Tec',
-                    'hum-card': course.type == 'Hum',
-                    'art-card': course.type == 'Art',
-                    'fic-card': course.type == 'Fic'
+                    'sci-card': course.courseType =='Sci',
+                    'lit-card': course.courseType == 'Lit',
+                    'tec-card': course.courseType == 'Tec',
+                    'hum-card': course.courseType == 'Hum',
+                    'art-card': course.courseType == 'Art',
+                    'fic-card': course.courseType == 'Fic'
                 }">
                     <mat-card-title>
-                        {{course.name}}
+                        {{course.courseName}}
                     </mat-card-title>
                     <mat-card-content>
                         <div>
-                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Tipo de materia: {{course.courseType}}</p>
                             <p>Semestre: {{course.semester}}</p>
                         </div>
                     </mat-card-content>
@@ -55,24 +55,24 @@
     </mat-tab>
     <mat-tab label="Tercer Semestre">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+            <input courseType="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
         </div>
         <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==3"> 
                 <mat-card [ngClass]="{
-                    'sci-card': course.type =='Sci',
-                    'lit-card': course.type == 'Lit',
-                    'tec-card': course.type == 'Tec',
-                    'hum-card': course.type == 'Hum',
-                    'art-card': course.type == 'Art',
-                    'fic-card': course.type == 'Fic'
+                    'sci-card': course.courseType =='Sci',
+                    'lit-card': course.courseType == 'Lit',
+                    'tec-card': course.courseType == 'Tec',
+                    'hum-card': course.courseType == 'Hum',
+                    'art-card': course.courseType == 'Art',
+                    'fic-card': course.courseType == 'Fic'
                 }">
                     <mat-card-title>
-                        {{course.name}}
+                        {{course.courseName}}
                     </mat-card-title>
                     <mat-card-content>
                         <div>
-                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Tipo de materia: {{course.courseType}}</p>
                             <p>Semestre: {{course.semester}}</p>
                         </div>
                     </mat-card-content>
@@ -82,24 +82,24 @@
     </mat-tab>
     <mat-tab label="Cuarto Semestre">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
+            <input courseType="text" class="form-control" placeholder="Buscar..." [(ngModel)]="filterSelection">
         </div>
         <div *ngFor="let course of myCourses | filter: filterSelection">
             <div *ngIf="course.semester==4"> 
                 <mat-card [ngClass]="{
-                    'sci-card': course.type =='Sci',
-                    'lit-card': course.type == 'Lit',
-                    'tec-card': course.type == 'Tec',
-                    'hum-card': course.type == 'Hum',
-                    'art-card': course.type == 'Art',
-                    'fic-card': course.type == 'Fic'
+                    'sci-card': course.courseType =='Sci',
+                    'lit-card': course.courseType == 'Lit',
+                    'tec-card': course.courseType == 'Tec',
+                    'hum-card': course.courseType == 'Hum',
+                    'art-card': course.courseType == 'Art',
+                    'fic-card': course.courseType == 'Fic'
                 }">
                     <mat-card-title>
-                        {{course.name}}
+                        {{course.courseName}}
                     </mat-card-title>
                     <mat-card-content>
                         <div>
-                            <p>Tipo de materia: {{course.type}}</p>
+                            <p>Tipo de materia: {{course.courseType}}</p>
                             <p>Semestre: {{course.semester}}</p>
                         </div>
                     </mat-card-content>

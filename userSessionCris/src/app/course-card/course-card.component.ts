@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
-import { Iuser, Icourses } from '../app.model';
+import { Iuser, courses, users } from '../app.model';
 import { CoursesService } from '../services/courses.service';
 
 @Component({
@@ -10,17 +10,17 @@ import { CoursesService } from '../services/courses.service';
 })
 export class CourseCardComponent implements OnInit {
   filterSelection:string = '';
-  myCourses: Icourses[] = []
+  myCourses: courses[] = []
   myUserString?: string 
-  myUser: Iuser = {}
+  myUser: users = {}
 
 
   constructor(private coursesService: CoursesService) { }
 
   ngOnInit(): void {
    this.myUserString = sessionStorage.getItem("myuser") || ''
-   this.myUser = JSON.parse(this.myUserString)[0]
-   this.coursesService.getAllUserCoursers(this.myUser.courses).subscribe(res => {this.myCourses = res})
+   this.myUser = JSON.parse(this.myUserString)
+   this.coursesService.getAllUserCourses(this.myUser.userId || '').subscribe(res => {this.myCourses = res})
    console.log(this.myCourses)
   }
 

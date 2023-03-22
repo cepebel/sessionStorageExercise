@@ -14,6 +14,9 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CoursesPanelComponent } from './courses-panel/courses-panel.component';
+import { CoursesTableComponent } from './courses-table/courses-table.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -23,7 +26,9 @@ import { FilterPipe } from './pipes/filter.pipe';
     LoginFormComponent,
     WelcomePageComponent,
     CourseCardComponent,
-    FilterPipe, 
+    FilterPipe,
+    CoursesPanelComponent,
+    CoursesTableComponent, 
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     MatTabsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
  
   ],
   providers: [FilterPipe],

@@ -4,10 +4,10 @@
 </div>
 
 <div class = "div-form">
-    <form #logInForm = "ngForm"  (ngSubmit)="iniciarSesion(logInForm)" class = "form-simple">
+    <form #logInForm = "ngForm"  (ngSubmit)="logIn(logInForm)" class = "form-simple">
         <div class = "div-label">
-            <label class = "label" for ="name ">Nombre:</label>
-            <input id ="name" name = "firstName" ngModel required #firstName = 'ngModel'><br>
+            <label class = "label" for ="email ">Email:</label>
+            <input id ="name" name = "email" ngModel required #firstName = 'ngModel'><br>
         </div>
         <div class = "div-label">
             <label class = "label" for = "password">Contraseña:</label>

@@ -1,5 +1,5 @@
 import { CoursesService } from '../services/courses.service';
-import { Iuser, Icourses } from './../app.model';
+import { Iuser, Icourses, users } from './../app.model';
 import { Component, OnInit } from '@angular/core';
 import { Observable, range } from 'rxjs';
 
@@ -11,13 +11,14 @@ import { Observable, range } from 'rxjs';
 export class WelcomePageComponent implements OnInit {
   myCourses: Icourses[] = []
   myUserString?: string 
-  myUser: Iuser = {}
+  myUser: users = {}
 
   constructor(private coursesService: CoursesService) { }
 
   ngOnInit(): void {
    this.myUserString = sessionStorage.getItem("myuser") || ''
-   this.myUser = JSON.parse(this.myUserString)[0]
+   this.myUser = JSON.parse(this.myUserString)
+   console.log('Usuario logeado: '+this.myUser.username)
  
   }
   cerrarSesion(){
