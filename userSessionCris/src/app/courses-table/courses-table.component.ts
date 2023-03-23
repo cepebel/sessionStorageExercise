@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesTableComponent implements OnInit {
   COURSES: courses[] = []
-  displayedColumns: string[] = ['courseName', 'courseType', 'etsCredits', 'semester', 'actions']
+  displayedColumns: string[] = ['courseName', 'courseType', 'etsCredits', 'semester','vacancies', 'actions']
   myUserString: string = ''
   myUser: users = {}
   myCourses: courses[] = []
@@ -36,6 +36,18 @@ export class CoursesTableComponent implements OnInit {
       return res
     })
     console.log(messg)
+  }
+
+  withdrawCourse(courseId: string){
+    console.log("Entro en withdraw")
+    let messg = this.courseServices.withdrawCourse(this.myUser.userId || '', courseId).subscribe(res=>{
+      return res
+    })
+    console.log(messg)
+  }
+
+  showEnroleButton(courseId: string) : boolean {
+    return this.myCourses.filter(course => course.courseId == courseId)?.length == 0
   }
 
   

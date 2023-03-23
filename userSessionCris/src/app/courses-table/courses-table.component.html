@@ -15,11 +15,15 @@
         <mat-header-cell *matHeaderCellDef> Semester</mat-header-cell>
         <mat-cell *matCellDef="let element">{{element.semester}}</mat-cell>
     </ng-container>
+    <ng-container matColumnDef="vacancies">
+        <mat-header-cell *matHeaderCellDef> Vacancies</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.vacancies}}</mat-cell>
+    </ng-container>
     <ng-container matColumnDef="actions">
         <mat-header-cell *matHeaderCellDef> </mat-header-cell>
         <mat-cell *matCellDef="let element">
-            <button mat-button>Withdraw</button> 
-            <button mat-button (click)="enroleOnCourse(element.courseId)">Enrole</button>
+            <button mat-button *ngIf="!showEnroleButton(element.courseId)" routerLink="/courses" (click)="withdrawCourse(element.courseId)">Withdraw</button> 
+            <button mat-button *ngIf="showEnroleButton(element.courseId)" routerLink="/courses" (click)="enroleOnCourse(element.courseId)">Enrole</button>
             <button mat-button>Info</button>
         </mat-cell>
     </ng-container>

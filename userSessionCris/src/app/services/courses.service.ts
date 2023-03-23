@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Iuser, Icourses, courses, Ijoin } from '../app.model';
+import { courses, Ijoin } from '../app.model';
 import { HttpClient } from '@angular/common/http';
-import { Observable, range } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { Observable} from 'rxjs';
+
 
 
 @Injectable({
@@ -39,6 +39,10 @@ export class CoursesService {
 
   enroleOnCourse(newUserId: string, newCourseId: string): Observable<string|undefined>{
     return this.http.post<string>(this.ENROLE_ON_COURSE, {userId: newUserId, courseId: newCourseId})
+  }
+
+  withdrawCourse(newUserId: string, newCourseId: string): Observable<string>{
+    return this.http.post<string>(this.WITHDRAW_COURSE, {userId: newUserId, courseId: newCourseId})
   }
 
   getJoinById(joinId: string): Observable<Ijoin>{
